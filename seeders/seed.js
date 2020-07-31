@@ -1,4 +1,5 @@
 let mongoose = require("mongoose");
+const path = require("path");
 let db = require("../models");
 
 mongoose.connect("mongodb://localhost/workout", {
