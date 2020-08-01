@@ -1,10 +1,14 @@
 // get all workout data from back-end
-
+console.log("/api/workouts/range");
 fetch("/api/workouts/range")
   .then(response => {
+    console.log("response");
+    console.log(response);
     return response.json();
   })
   .then(data => {
+    console.log("get workouts");
+    console.log(data);
     populateChart(data);
   });
 
