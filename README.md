@@ -1,6 +1,8 @@
 # NoSQLWorkoutTracker
 # Description
 this web app will allow user to track workouts in mongo and display charts and graphs of workouts
+# Link to deployed app
+https://gene-nosqlworkouttracker.herokuapp.com/
 # Table of Contents
 none
 # Installation
