@@ -130,15 +130,23 @@ let workoutSeed = [
         name: "Bench",
         duration: 30,
         distance: 2
+      },
+      {
+        type: "resistanceasdfasdfasfd",
+        name: "Military Press",
+        duration: 20,
+        weight: 300,
+        reps: 10,
+        sets: 4
       }
     ]
   }
 ];
 
-db.Workout.deleteMany({})
-  .then(() => db.Workout.collection.insertMany(workoutSeed))
+db.deleteMany({})
+  .then(() => db.insertMany(workoutSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    // console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
   .catch(err => {
